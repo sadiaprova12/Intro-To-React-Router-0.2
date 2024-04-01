@@ -11,6 +11,7 @@ import {
 import Home from './components/About/Home/Home.jsx';
 import Contact from './components/About/Contact/Contact.jsx';
 import About from './components/About/About.jsx';
+import First from './components/About/First/First.jsx';
 
 // const router = createBrowserRouter([
 //   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
     path: '/',
     element: <Home></Home>,
     children: [
+      {
+        path: '/',
+        element: <First></First>
+      },
      {
       path: 'about',
       element: <About></About>
